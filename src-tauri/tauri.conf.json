@@ -3,7 +3,8 @@
     "distDir": "../dist",
     "devPath": "http://localhost:9000",
     "beforeDevCommand": "",
-    "beforeBuildCommand": ""
+    "beforeBuildCommand": "",
+    "withGlobalTauri": true
   },
   "tauri": {
     "bundle": {
@@ -35,11 +36,14 @@
       }
     },
     "allowlist": {
-      "all": true
+      "all": true,
+      "notification": {
+        "all": true
+      }
     },
     "windows": [
       {
-        "title": "Welcome to Tauri!",
+        "title": "Most annoying app ever created!",
         "width": 800,
         "height": 600,
         "resizable": true,

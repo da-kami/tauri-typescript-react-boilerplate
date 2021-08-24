@@ -9,7 +9,7 @@ struct CustomResponse {
 async fn message_from_rust(window: tauri::Window) -> Result<CustomResponse, String> {
   println!("Called from {}", window.label());
   Ok(CustomResponse {
-    message: "Hello from rust!".to_string()
+    message: "I annoyed you!".to_string()
   })
 }
 
